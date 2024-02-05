@@ -1,6 +1,6 @@
 import React from 'react'
-import { Navbar } from '../../Components'
 import '../../App.css'
+import { FooterWithSitemap } from '../../Components'
 
 const Home = () => {
     const datas = [
@@ -23,7 +23,6 @@ const Home = () => {
     ]
     return (
         <div className=''>
-            <Navbar />
             <div className='mt-28'>
                 <img src="/safetytest1.jpg" className='w-screen h-[450px] sm:object-fill object-cover' alt="safety Banner" />
                 <div className=''>
@@ -46,63 +45,26 @@ const Home = () => {
                         <div className='max-w-[430px]'>
                             <h1 className='text-3xl font-semibold w-full'>Technical specifications</h1>
                             <div className='w-[80px] h-[10px] bg-[#BA2025] my-4'></div>
+                            <Specifications h2="Goal:" p={'To recognize level headed future and current employees and to reduce accidents.'} />
+                            <Specifications h2="Available in:" p={'English, Portuguese and Latin American Spanish'} />
+                            <Specifications h2="Factors:" p={'Compliance with Rules, Self-control, Prudence - Risk Aversion and Concentration.'} />
+                            <Specifications h2="Application format:" p={'Online'} />
+                            <Specifications h2="Used in:" p={'Engineers, mechanics, contractors, mining, logistics, aviation and any area or position with a high accident risk.'} />
+                            <Specifications h2="Test duration:" p={'12 minutes'} />
+                            <Specifications h2="Number of questions:" p={77} />
+                            <Specifications h2="Based on:" p={'Multiple validation researches.'} />
+                            <Specifications h2="Reliability:" p={'0.93'} />
+                            <Specifications h2="Reports:" p={'Available immediately online'} />
 
-                            <div className='my-3'>
-                                <h2 className='font-semibold '>Goal:</h2>
-                                <p>To recognize level headed future and current employees and to reduce accidents.</p>
-                            </div>
-
-                            <div className='my-3'>
-                                <h2 className='font-semibold '>Available in:</h2>
-                                <p>English, Portuguese and Latin American Spanish</p>
-                            </div>
-
-                            <div className='my-3'>
-                                <h2 className='font-semibold '>Factors:</h2>
-                                <p>Compliance with Rules, Self-control, Prudence - Risk Aversion and Concentration.</p>
-                            </div>
-
-                            <div className='my-3'>
-                                <h2 className='font-semibold '>Application format:</h2>
-                                <p>Online</p>
-                            </div>
-
-                            <div className='my-3'>
-                                <h2 className='font-semibold '>Used in:</h2>
-                                <p>Engineers, mechanics, contractors, mining, logistics, aviation and any area or position with a high accident risk.</p>
-                            </div>
-
-                            <div className='my-3'>
-                                <h2 className='font-semibold '>Test duration:</h2>
-                                <p>12 minutes</p>
-                            </div>
-
-                            <div className='my-3'>
-                                <h2 className='font-semibold '>Number of questions:</h2>
-                                <p> 77</p>
-                            </div>
-
-                            <div className='my-3'>
-                                <h2 className='font-semibold '>Based on:</h2>
-                                <p className='sm:w-[400px]'>Multiple validation researches.</p>
-                            </div>
-                            <div className='my-3'>
-                                <h2 className='font-semibold '>Reliability:</h2>
-                                <p className='sm:w-[400px]'>0.93</p>
-                            </div>
-                            <div className='my-3'>
-                                <h2 className='font-semibold '>Reports:</h2>
-                                <p className='sm:w-[400px]'>Available immediately online</p>
-                            </div>
                             <div className='my-3'>
                                 <h2 className='font-semibold '>Available tests:</h2>
-                                <p className='sm:w-[400px]'>
+                                <div className='sm:w-[400px]'>
                                     <ul>
                                         <li>Safe Behavioral DNA</li>
                                         <li>Safe Behavioral DNA R</li>
                                         <li>Safe Behavioral DNA Driver</li>
                                     </ul>
-                                </p>
+                                </div>
                             </div>
                         </div>
 
@@ -147,26 +109,94 @@ const Home = () => {
 
                     <div className='max-w-[1500px] px-[10px] sm:px-[7%]'>
                         <h1 className='text-4xl font-normal'>Scales</h1>
-                        <h2 className='mt-2'>Behavioral dimensions:</h2>
-                        <div className='w-full flex lg:flex-row flex-col my-8 text-[#72B7BE] text-2xl'>
-                            <div className='addborder py-2 px-20 flex flex-col justify-center items-center '>
-                                <h1>Security knowledge</h1>
+                        <h2 className='mt-2'>Behavioral Dimensions:</h2>
+                        <div className='w-full flex lg:flex-row flex-col my-8 text-[#0992CA] text-2xl'>
+                            <Dimensions h1={'Security Knowledge'} />
+                            <Dimensions h1={'Previous Experiences'} />
+                            <Dimensions h1={'Safety Performance'} />
+                        </div>
+
+                        <h2 className='mt-2'>Dimensions of Personality Traits:</h2>
+                        <div className='w-full flex lg:flex-row flex-col my-8 text-[#0992CA] text-2xl'>
+                            <div className='addborder py-3 lg:px-[88px] flex flex-col justify-center items-center '>
+                                <h1>Stress Tolerance</h1>
                                 <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
                             </div>
-                            <div className='addborder py-2 px-20 flex flex-col justify-center items-center '>
-                                <h1>Previous experiences</h1>
+                            <div className='addborder py-3 lg:px-[88px] flex flex-col justify-center items-center '>
+                                <h1>Ability to Avoid Risks</h1>
                                 <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
                             </div>
-                            <div className='addborder py-2 px-20 flex flex-col justify-center items-center '>
-                                <h1>Safety performance</h1>
+                            <div className='addborder py-3 lg:px-[88px] flex flex-col justify-center items-center '>
+                                <h1>Commitment Level</h1>
                                 <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
                             </div>
+                        </div>
+                        <div className='mt-20 flex sm:ga-8 justify-center items-center'>
+                            <img src="/customversion.jpg" alt="" />
+                            <div>
+                                <p className='text-xl'>Custom versions are available for specific hazards and work environments.</p>
+                                <div className='sm:w-[300px] w-40 h-[5px] bg-[#BA2025] mt-2'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='bg-[#102236] py-14'>
+                        <div className='max-w-[1500px] px-[10px] sm:px-[7%]'>
+                            <h1 className='text-3xl text-white font-semibold '>Customer Benefits Package</h1>
+                            <div className='border border-[#0992CA] border-solid max-w-[800px] mt-4  p-6 leading-7 text-[#B0F9FF] text-base'>
+                                As a Midot customer, you will receive access to your chosen assessments, process management tools and a wide range of additional services, including training, customer support, professional advice, ROI analysis, local validation studies, standards optimization and scoring and scoring customization. We are at your disposal to support you through a comprehensive and professional approach.
+                            </div>
+                            <div className='flex md:flex-row md:gap-2 flex-col md:justify-between mt-14'>
+                                <div className='w-full md:max-w-[250px]'>
+                                    <h1 className='text-white text-lg font-semibold'>TRAINING</h1>
+                                    <div className='w-[150px] h-[5px] bg-[#B0F9FF] my-2'></div>
+                                    <p className='text-white font-medium'>From day one and throughout the service cycle, unlimited in-person or online training is available to all test administrators.</p>
+                                </div>
+
+                                <div className='w-full md:max-w-[250px] mt-8 md:mt-0'>
+                                    <h1 className='text-white text-lg font-semibold'>SUPPORT</h1>
+                                    <div className='w-[150px] h-[5px] bg-[#B0F9FF] my-2'></div>
+                                    <p className='text-white font-medium'>The Midot team is always available to answer user questions, usually with almost immediate response times.</p>
+                                </div>
+
+                                <div className='w-full md:max-w-[250px] mt-8 md:mt-0'>
+                                    <h1 className='text-white text-lg font-semibold'>INVESTIGATION</h1>
+                                    <div className='w-[150px] h-[5px] bg-[#B0F9FF] my-2'></div>
+                                    <p className='text-white font-medium'>Unparalleled research and scientific publications in dozens of academic studies worldwide provide solid support for evaluation decisions and enable accurate ROI calculations.</p>
+                                </div>
+
+                                <div className='w-full md:max-w-[250px] mt-8 md:mt-0'>
+                                    <h1 className='text-white text-lg font-semibold'>ADVICE</h1>
+                                    <div className='w-[150px] h-[5px] bg-[#B0F9FF] my-2'></div>
+                                    <p className='text-white font-medium'>Midot is led by an interdisciplinary team of mainly researchers, developers and managers with extensive training and experience in the fields of psychology, psychometrics and personnel evaluation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='bg-[#0992C9] py-14'>
+                        <div className='max-w-[1500px] px-[10px] sm:px-[7%] flex lg:flex-row flex-col lg:justify-between lg:items-center'>
+                            <img src="/safetyMeter.png" alt="safetyMeter" />
+                            <div className='lg:w-[350px] w-full mt-8 sm:mt0'>
+                                <h1 className='text-white text-4xl font-semibold'>Reporting: Make informed decisions immediately</h1>
+                                <p className='mt-3 text-white '>The results of the people tested are available online immediately after the completion of the test. Results can be easily shortlisted based on score and can also be viewed individually, with detailed information for in-depth analysis. All data can be easily exported to Excel for statistical analysis and management decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='databg py-14'>
+                        <div className='max-w-[1500px] px-[10px] sm:px-[7%]'>
+
+                            <h3 className='text-xl text-white'>LEARN MORE ABOUT</h3>
+                            <h1 className='text-5xl font-semibold my-6 text-white'>Safety TEST</h1>
+                            <div className='w-44 h-4 bg-[#0992CA] my-8'></div>
+                            <p className='text-white text-3xl font-semibold max-w-[500px]'>An assessment designed to predict potential risks of workplace accidents in the work environment for candidates and collaborators</p>
+                            <button className='py-4 px-8 text-white border-2 border-white rounded my-8'>
+                                More Information
+                            </button>
                         </div>
                     </div>
 
                 </div>
+                <FooterWithSitemap />
             </div>
-
         </div>
     )
 }
@@ -186,5 +216,19 @@ const Company = ({ data }) => (
             <li className='my-4'>{data?.li3}</li>
             <li className='my-4'>{data?.li4}</li>
         </ul>
+    </div>
+)
+
+const Specifications = ({ h2, p }) => (
+    <div className='my-3'>
+        <h2 className='font-semibold '>{h2}</h2>
+        <p className='sm:w-[400px]'>{p}</p>
+    </div>
+)
+
+const Dimensions = ({ h1 }) => (
+    <div className='addborder py-2 px-20 flex flex-col justify-center items-center '>
+        <h1>{h1}</h1>
+        <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
     </div>
 )
