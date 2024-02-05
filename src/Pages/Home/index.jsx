@@ -30,15 +30,17 @@ const Home = () => {
                     <div className='lg:justify-between flex lg:flex-row flex-col mt-7 max-w-[1500px] px-[10px] sm:px-[7%] '>
 
                         <div className='lg:w-[60%] w-full'>
-                            <h1 className='text-black text-4xl'>Safety<span className='text-[#72B7BD]'>TEST</span></h1>
+                            <h1 className='text-black text-4xl'>Safety TEST </h1>
 
                             <h3 className='mt-6 w-[80%] text-[#72B7BD] text-3xl'>Safety testing to reduce risks of accidents in the workplace</h3>
                             <p className='mt-6 text-base'>Measures the potential risk of workplace accidents for candidates and current employees</p>
-                            <p className='mt-6 text-base'>SafetyTEST is an innovative and unique assessment tool designed to identify candidates and employees at high risk for hazardous behavior and accidents in the workplace. In addition, it generates alerts when a gap is identified between the candidates' security profiles and the risk level of their job. By combining SafetyTEST results and recommended follow-up actions, Midot helps organizations around the world manage their safety culture and reduce costs linked to workplace accidents.</p>
+                            <p className='mt-6 text-base'>The Safe Behavioral DNA psychometric test is an exclusive and comprehensive evaluation tool, developed after extensive studies on safe work behavior in various countries, allowing the identification of candidates and employees with high risk of engaging in dangerous and reckless behavior being more prone to work related accidents.</p>
 
-                            <h3 className='my-7 font-semibold text-[#72B7BD] text-3xl'>Contributes to the organization by eliminating potential accidents and helps create economical focus and training programs</h3>
-                            <p className='my-5'>According to some estimates, people's unsafe behaviors cause up to 80%-90% of workplace accidents. Therefore, the prevention of such behaviors is essential to reduce the costs linked to workplace accidents. In fact, an organization's financial costs related to workplace accidents can include medical expenses, workers' compensation payments for workplace accidents, absenteeism, sick leave/loss of productivity, higher insurance premiums, and other expenses.F</p>
-                            <p className='my-5'>The detailed SafetyTEST report provides the general risk indicator of the person tested and also indicates some weaknesses that should be resolved to make training more focused and efficient. Likewise, SafetyTEST identifies low-risk employees who can be developed to become safety supervisors. Managers can also use this test to restructure work teams by assigning “stars” and at-risk employees to the same team.F</p>
+                            <h3 className='my-7 font-semibold text-[#72B7BD] text-3xl'>It is based on four factors associated with job security: Compliance with Rules, Self-control, Prudence - Risk Aversion and Concentration.</h3>
+                            <p className='my-5'>Every applicant or current employee answers the questionnaire online in an average time of 12 minutes, and companies receive a complete psychometric report of the evaluated person attitude towards safety.</p>
+                            <p className='my-5'>The human factor  explains as much as 80% of work related accidents, associated with unsafe or reckless behavior. In this way, it is essential to have psychometric tests for the employee selection process that can identify more level headed people, who are not likely to misbehave at work and just be safer.</p>
+                            <p className="my-5">The human factor  explains as much as 80% of work related accidents, associated with unsafe or reckless behavior. In this way, it is essential to have psychometric tests for the employee selection process that can identify more level headed people, who are not likely to misbehave at work and just be safer.</p>
+                            <p className="my-5">The Safe Behavioral DNA work safety test report, provides a general risk indicator of the person examined and give you scores on the four factors associated with safe work behavior: Compliance with Rules, Self-control, Prudence - Risk Aversion and Concentration.</p>
                         </div>
 
                         <div className='max-w-[430px]'>
@@ -66,7 +68,7 @@ const Home = () => {
                             </div>
 
                             <div className='my-3'>
-                                <h2 className='font-semibold '>Used in::</h2>
+                                <h2 className='font-semibold '>Used in:</h2>
                                 <p>Engineers, mechanics, contractors, mining, logistics, aviation and any area or position with a high accident risk.</p>
                             </div>
 
@@ -107,7 +109,7 @@ const Home = () => {
                     </div>
 
                     <h1 className='text-gray-500 text-4xl my-14 max-w-[1500px] px-[10px] sm:px-[7%] '>
-                        “When someone is clumsy, easily stressed, or prone to taking risks, no matter how much we invest in training and equipment, in the end, accidents will happen…”
+                        “Get recommendations from our experts to aid you in planning implementation strategies for workplace safety programs.....”
                     </h1>
                     <div className='flex md:justify-between gap-8 md:flex-row flex-col max-w-[1500px] px-[10px] sm:px-[7%] '>
                         {datas.map((data, i) => {
