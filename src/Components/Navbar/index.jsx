@@ -11,7 +11,7 @@ const Navbar = ({ isDarkTheme, custom1, custom2, custom3, custom4, custom5, onCl
                 <div className="font-semibold text-2xl cursor-pointer flex items-center gap-1">
                     <h1 className="text-white animate__animated animate__backInDown">
                         <Link to="/" className="flex justify-center place-items-center">
-                            <img src="/logo.webp" alt="logo" className="w-14" />
+                            <img src="/logo.webp" alt="logo" className="w-24" />
                         </Link>
                     </h1>
                 </div>

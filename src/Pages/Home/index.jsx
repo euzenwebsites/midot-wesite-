@@ -24,7 +24,7 @@ const Home = () => {
     return (
         <div className=''>
             <Navbar />
-            <div className='mt-20'>
+            <div className='mt-28'>
                 <img src="/safetytest1.jpg" className='w-screen h-[450px] sm:object-fill object-cover' alt="safety Banner" />
                 <div className=''>
                     <div className='lg:justify-between flex lg:flex-row flex-col mt-7 max-w-[1500px] px-[10px] sm:px-[7%] '>
