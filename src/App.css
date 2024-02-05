@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgImg{
+    background-image: url('/AnimatedShape.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.addborder{
+    border: 2px dotted black;
+    float: left;
+}

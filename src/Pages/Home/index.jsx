@@ -1,0 +1,188 @@
+import React from 'react'
+import { Navbar } from '../../Components'
+import '../../App.css'
+
+const Home = () => {
+    const datas = [
+        {
+            src: "/product-icon-1.png",
+            h3: "Reduce costs and improve the social environment and prestige of your company",
+            li1: "Prevent accidents and avoid direct financial losses.",
+            li2: "Increase the motivation of your staff and make yourself known as a safe and responsible company.",
+            li3: "SafetyTEST guides your organization towards individual and collective well-being and has a profound impact.",
+            li4: "The return on investment when using SafetyTEST can be accurately measured with Midot's ROI calculator."
+        },
+        {
+            src: "/product-icon-2.png",
+            h3: "Podium, a highly efficient platform to manage evaluations",
+            li1: "Manage your entire recruitment process from one place.",
+            li2: "Easily customize Podium for your organizational needs.",
+            li3: "View all your usage and evaluation analytics data in easy-to-understand dashboards.",
+            li4: "Cloud-based service, without the need for installation or additional hardware."
+        },
+    ]
+    return (
+        <div className=''>
+            <Navbar />
+            <div className='mt-20'>
+                <img src="/safetytest.jpg" className='w-screen h-[450px] sm:object-fill object-cover' alt="safety Banner" />
+                <div className=''>
+                    <div className='lg:justify-between flex lg:flex-row flex-col mt-7 max-w-[1500px] px-[10px] sm:px-[7%] '>
+
+                        <div className='lg:w-[60%] w-full'>
+                            <h1 className='text-black text-4xl'>Safety<span className='text-[#72B7BD]'>TEST</span></h1>
+
+                            <h3 className='mt-6 w-[80%] text-[#72B7BD] text-3xl'>Safety testing to reduce risks of accidents in the workplace</h3>
+                            <p className='mt-6 text-base'>Measures the potential risk of workplace accidents for candidates and current employees</p>
+                            <p className='mt-6 text-base'>SafetyTEST is an innovative and unique assessment tool designed to identify candidates and employees at high risk for hazardous behavior and accidents in the workplace. In addition, it generates alerts when a gap is identified between the candidates' security profiles and the risk level of their job. By combining SafetyTEST results and recommended follow-up actions, Midot helps organizations around the world manage their safety culture and reduce costs linked to workplace accidents.</p>
+
+                            <h3 className='my-7 font-semibold text-[#72B7BD] text-3xl'>Contributes to the organization by eliminating potential accidents and helps create economical focus and training programs</h3>
+                            <p className='my-5'>According to some estimates, people's unsafe behaviors cause up to 80%-90% of workplace accidents. Therefore, the prevention of such behaviors is essential to reduce the costs linked to workplace accidents. In fact, an organization's financial costs related to workplace accidents can include medical expenses, workers' compensation payments for workplace accidents, absenteeism, sick leave/loss of productivity, higher insurance premiums, and other expenses.F</p>
+                            <p className='my-5'>The detailed SafetyTEST report provides the general risk indicator of the person tested and also indicates some weaknesses that should be resolved to make training more focused and efficient. Likewise, SafetyTEST identifies low-risk employees who can be developed to become safety supervisors. Managers can also use this test to restructure work teams by assigning “stars” and at-risk employees to the same team.F</p>
+                        </div>
+
+                        <div className='max-w-[430px]'>
+                            <h1 className='text-3xl font-semibold w-full'>Technical specifications</h1>
+                            <div className='w-[80px] h-[10px] bg-[#BA2025] my-4'></div>
+
+                            <div className='my-3'>
+                                <h2 className='font-semibold '>Goal:</h2>
+                                <p>To recognize level headed future and current employees and to reduce accidents.</p>
+                            </div>
+
+                            <div className='my-3'>
+                                <h2 className='font-semibold '>Available in:</h2>
+                                <p>English, Portuguese and Latin American Spanish</p>
+                            </div>
+
+                            <div className='my-3'>
+                                <h2 className='font-semibold '>Factors:</h2>
+                                <p>Compliance with Rules, Self-control, Prudence - Risk Aversion and Concentration.</p>
+                            </div>
+
+                            <div className='my-3'>
+                                <h2 className='font-semibold '>Application format:</h2>
+                                <p>Online</p>
+                            </div>
+
+                            <div className='my-3'>
+                                <h2 className='font-semibold '>Used in::</h2>
+                                <p>Engineers, mechanics, contractors, mining, logistics, aviation and any area or position with a high accident risk.</p>
+                            </div>
+
+                            <div className='my-3'>
+                                <h2 className='font-semibold '>Test duration:</h2>
+                                <p>12 minutes</p>
+                            </div>
+
+                            <div className='my-3'>
+                                <h2 className='font-semibold '>Number of questions:</h2>
+                                <p> 77</p>
+                            </div>
+
+                            <div className='my-3'>
+                                <h2 className='font-semibold '>Based on:</h2>
+                                <p className='sm:w-[400px]'>Multiple validation researches.</p>
+                            </div>
+                            <div className='my-3'>
+                                <h2 className='font-semibold '>Reliability:</h2>
+                                <p className='sm:w-[400px]'>0.93</p>
+                            </div>
+                            <div className='my-3'>
+                                <h2 className='font-semibold '>Reports:</h2>
+                                <p className='sm:w-[400px]'>Available immediately online</p>
+                            </div>
+                            <div className='my-3'>
+                                <h2 className='font-semibold '>Available tests:</h2>
+                                <p className='sm:w-[400px]'>
+                                    <ul>
+                                        <li>Safe Behavioral DNA</li>
+                                        <li>Safe Behavioral DNA R</li>
+                                        <li>Safe Behavioral DNA Driver</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h1 className='text-gray-500 text-4xl my-14 max-w-[1500px] px-[10px] sm:px-[7%] '>
+                        “When someone is clumsy, easily stressed, or prone to taking risks, no matter how much we invest in training and equipment, in the end, accidents will happen…”
+                    </h1>
+                    <div className='flex md:justify-between gap-8 md:flex-row flex-col max-w-[1500px] px-[10px] sm:px-[7%] '>
+                        {datas.map((data, i) => {
+                            return <Company key={i} data={data} />
+                        })}
+                    </div>
+                    <div className='my-8 max-w-[1500px] px-[10px] sm:px-[7%] '>
+                        <img src={'/product-icon-3.png'} alt="product 1" />
+                        <h3 className='text-lg font-semibold my-4 w-[80%]'>
+                            Tools to predict, measure and compare
+                        </h3>
+                        <ul className='list-disc text-lg max-w-[550px]'>
+                            <li className='my-4'>Identify exactly which employees should participate in training and in which areas. Save training costs, get better results, and get motivated supervisors and employees.</li>
+                            <li className='my-4'>Use SafetyTEST's job risk level catalog to compare employee safety profiles to appropriate positions.</li>
+                            <li className='my-4'>Once an employee's risks are designated, the organization can build more balanced work teams. For example, some new employees can be placed with more experienced ones, and some employees with higher risk levels can be assigned to the same team as safer employees, etc.</li>
+                            <li className='my-4'>Use our analysis module to identify organizational weaknesses – by plant, business unit, or any population segment – ​​and plan your security training programs more efficiently.</li>
+                            <li className='my-4'>Receive professional recommendations for short- and long-term planning and implementation strategies for workplace safety programs.</li>
+                        </ul>
+                    </div>
+                    <div className='bgImg flex lg:flex-row flex-col lg:items-center lg:justify-between max-w-[1500px] px-[10px] sm:px-[7%] py-[50px] my-8'>
+                        <div className=''>
+                            <h2 className='text-4xl text-white font-semibold'>Test it</h2>
+                            <p className='text-white max-w-[500px] my-4 text-lg font-normal'>"From day one and throughout the whole cycle, in-person or online training is available to all test administrators. Supported with exclusive audiovisual training material"</p>
+                            <ul className='list-disc max-w-[500px] text-white'>
+                                <li className='my-4'>We have created and validated SafetyTEST together with our clients and strategic partners, making it an accurate and highly relevant tool to measure, predict and correct behaviors that could cause accidents in the workplace.</li>
+                                <li>Companies that use SafetyTEST as part of their safety standards report fewer workplace accidents and better placed employees in positions more appropriate for their levels of risk behavior</li>
+                            </ul>
+
+                            <button className='bg-[#72B7BE] p-3 mt-7 rounded-lg hover:bg-[#2a95a1]'>Request a Demo Version</button>
+                        </div>
+                        <div>
+                            <img src="/general.jpg" alt="" className='lg:mt-0 mt-16 h-full lg:h-[400px] object-contain flex justify-start' />
+                        </div>
+                    </div>
+
+                    <div className='max-w-[1500px] px-[10px] sm:px-[7%]'>
+                        <h1 className='text-4xl font-normal'>Scales</h1>
+                        <h2 className='mt-2'>Behavioral dimensions:</h2>
+                        <div className='w-full flex lg:flex-row flex-col my-8 text-[#72B7BE] text-2xl'>
+                            <div className='addborder py-2 px-20 flex flex-col justify-center items-center '>
+                                <h1>Security knowledge</h1>
+                                <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
+                            </div>
+                            <div className='addborder py-2 px-20 flex flex-col justify-center items-center '>
+                                <h1>Previous experiences</h1>
+                                <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
+                            </div>
+                            <div className='addborder py-2 px-20 flex flex-col justify-center items-center '>
+                                <h1>Safety performance</h1>
+                                <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    )
+}
+
+export default Home
+
+
+const Company = ({ data }) => (
+    <div className=''>
+        <img src={data?.src} alt="product 1" />
+        <h3 className='text-lg font-semibold my-4 w-[80%]'>
+            {data?.h3}
+        </h3>
+        <ul className='list-disc text-lg max-w-[550px]'>
+            <li className='my-4'>{data?.li1}</li>
+            <li className='my-4'>{data?.li2}</li>
+            <li className='my-4'>{data?.li3}</li>
+            <li className='my-4'>{data?.li4}</li>
+        </ul>
+    </div>
+)
