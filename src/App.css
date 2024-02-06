@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.slogan{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .bgImg{
     background-image: url('/AnimatedShape.svg');
     background-repeat: no-repeat;

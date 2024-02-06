@@ -11,7 +11,7 @@ const Navbar = ({ isDarkTheme, custom1, custom2, custom3, custom4, custom5, onCl
                 <div className="font-semibold text-2xl cursor-pointer flex items-center gap-1">
                     <Link to="/" className="flex justify-center place-items-center">
                         <img src="/logo.webp" alt="logo" className="w-24" />
-                        <h1 className="text-[#EA5719] ml-5 hover:text-[#1A567D] duration-500">Safe Behavorial Test</h1>
+                        <h1 className="text-[#EA5719] ml-5 hover:text-[#1A567D] duration-500 slogan lg::text-4xl md:text-3xl text-xl">Safe Behavorial Test</h1>
 
                     </Link>
                 </div>

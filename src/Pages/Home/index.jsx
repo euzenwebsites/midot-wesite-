@@ -29,7 +29,7 @@ const Home = () => {
                     <div className='lg:justify-between flex lg:flex-row flex-col mt-7 max-w-[1500px] px-[10px] sm:px-[7%] '>
 
                         <div className='lg:w-[60%] w-full'>
-                            <h1 className='text-black text-4xl'>Safety TEST </h1>
+                            <h1 className='text-black text-4xl font-sans'>Safety TEST </h1>
 
                             <h3 className='mt-6 w-[80%] text-[#72B7BD] text-3xl'>Safety testing to reduce risks of accidents in the workplace</h3>
                             <p className='mt-6 text-base'>Measures the potential risk of workplace accidents for candidates and current employees</p>
@@ -118,18 +118,9 @@ const Home = () => {
 
                         <h2 className='mt-2'>Dimensions of Personality Traits:</h2>
                         <div className='w-full flex lg:flex-row flex-col my-8 text-[#0992CA] text-2xl'>
-                            <div className='addborder py-3 lg:px-[88px] flex flex-col justify-center items-center '>
-                                <h1>Stress Tolerance</h1>
-                                <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
-                            </div>
-                            <div className='addborder py-3 lg:px-[88px] flex flex-col justify-center items-center '>
-                                <h1>Ability to Avoid Risks</h1>
-                                <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
-                            </div>
-                            <div className='addborder py-3 lg:px-[88px] flex flex-col justify-center items-center '>
-                                <h1>Commitment Level</h1>
-                                <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
-                            </div>
+                            <Traits h1={'Stress Tolerance'} />
+                            <Traits h1={'Ability to Avoid Risks'} />
+                            <Traits h1={'Commitment Level'} />
                         </div>
                         <div className='mt-20 flex sm:ga-8 justify-center items-center'>
                             <img src="/customversion.jpg" alt="" />
@@ -151,24 +142,9 @@ const Home = () => {
                                     <div className='w-[150px] h-[5px] bg-[#B0F9FF] my-2'></div>
                                     <p className='text-white font-medium'>From day one and throughout the service cycle, unlimited in-person or online training is available to all test administrators.</p>
                                 </div>
-
-                                <div className='w-full md:max-w-[250px] mt-8 md:mt-0'>
-                                    <h1 className='text-white text-lg font-semibold'>SUPPORT</h1>
-                                    <div className='w-[150px] h-[5px] bg-[#B0F9FF] my-2'></div>
-                                    <p className='text-white font-medium'>The Midot team is always available to answer user questions, usually with almost immediate response times.</p>
-                                </div>
-
-                                <div className='w-full md:max-w-[250px] mt-8 md:mt-0'>
-                                    <h1 className='text-white text-lg font-semibold'>INVESTIGATION</h1>
-                                    <div className='w-[150px] h-[5px] bg-[#B0F9FF] my-2'></div>
-                                    <p className='text-white font-medium'>Unparalleled research and scientific publications in dozens of academic studies worldwide provide solid support for evaluation decisions and enable accurate ROI calculations.</p>
-                                </div>
-
-                                <div className='w-full md:max-w-[250px] mt-8 md:mt-0'>
-                                    <h1 className='text-white text-lg font-semibold'>ADVICE</h1>
-                                    <div className='w-[150px] h-[5px] bg-[#B0F9FF] my-2'></div>
-                                    <p className='text-white font-medium'>Midot is led by an interdisciplinary team of mainly researchers, developers and managers with extensive training and experience in the fields of psychology, psychometrics and personnel evaluation.</p>
-                                </div>
+                                <Lists h1={'SUPPORT'} p={'The Midot team is always available to answer user questions, usually with almost immediate response times.'} />
+                                <Lists h1={'INVESTIGATION'} p={'Unparalleled research and scientific publications in dozens of academic studies worldwide provide solid support for evaluation decisions and enable accurate ROI calculations.'} />
+                                <Lists h1={'ADVICE'} p={'Midot is led by an interdisciplinary team of mainly researchers, developers and managers with extensive training and experience in the fields of psychology, psychometrics and personnel evaluation.'} />
                             </div>
                         </div>
                     </div>
@@ -230,5 +206,19 @@ const Dimensions = ({ h1 }) => (
     <div className='addborder py-2 px-20 flex flex-col justify-center items-center '>
         <h1>{h1}</h1>
         <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
+    </div>
+)
+
+const Traits = ({ h1 }) => (
+    <div className='addborder py-3 lg:px-[88px] flex flex-col justify-center items-center ' >
+        <h1>{h1}</h1>
+        <div className='w-[80px] h-[5px] bg-[#BA2025] my-4'></div>
+    </div >
+)
+const Lists = ({ h1, p }) => (
+    <div className='w-full md:max-w-[250px] mt-8 md:mt-0'>
+        <h1 className='text-white text-lg font-semibold'>{h1}</h1>
+        <div className='w-[150px] h-[5px] bg-[#B0F9FF] my-2'></div>
+        <p className='text-white font-medium'>{p}</p>
     </div>
 )
